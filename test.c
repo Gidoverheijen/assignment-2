@@ -321,7 +321,7 @@ int main (int argc, char *argv[])
            if (i == total_ranks-1){
                update_slice(b, c, n, (n*n - get_row_number(n, total_ranks, i)*n) , n*n);
            }else {
-               update_slice(b, c, n, (get_row_number(n, total_ranks, i)-1)*n*i , ((get_row_number(n, total_ranks, i)-1)*(i+1)+2)*n);
+               update_slice(b, c, n, (get_row_number(n, total_ranks, i)-2)*n*i , ((get_row_number(n, total_ranks, i)-2)*(i+1)+2)*n);
            }
        }
        
